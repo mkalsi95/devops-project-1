@@ -26,4 +26,6 @@ jobs:
       run: npm test
 
     - name: Lint code
-      run: npx eslint .
+      run: |
+        npx install --save-dev eslint@8.57.0
+        npx eslint .
